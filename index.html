@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+    <title>Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <input id="display" readonly>
+        <button onclick="appendToDisplay('+')" class="button symbol">+</button>
+        <button onclick="appendToDisplay('-')" class="button symbol">-</button>
+        <button onclick="appendToDisplay('×')" class="button symbol">×</button>
+        <button onclick="appendToDisplay('÷')" class="button symbol">÷</button>
+        <button onclick="appendToDisplay('7')" class="button digit">7</button>
+        <button onclick="appendToDisplay('8')" class="button digit">8</button>
+        <button onclick="appendToDisplay('9')" class="button digit">9</button>
+        <button onclick="appendToDisplay('=')" class="button result">=</button>
+        <button onclick="appendToDisplay('4')" class="button digit">4</button>
+        <button onclick="appendToDisplay('5')" class="button digit">5</button>
+        <button onclick="appendToDisplay('6')" class="button digit">6</button>
+        <button onclick="appendToDisplay('1')" class="button digit">1</button>
+        <button onclick="appendToDisplay('2')" class="button digit">2</button>
+        <button onclick="appendToDisplay('3')" class="button digit">3</button>
+        <button onclick="appendToDisplay('0')" class="button digit">0</button>
+        <button onclick="appendToDisplay('.')" class="button digit">.</button>
+        <button onclick="clearDisplay()" class="button digit">AC</button>
+  </div>  
+  <script src="/app.js"></script>
+</body>
+</html>
